@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Volunteer | Hope Foundation</title>
+
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4fefe;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 25px;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 32px;
+  color: #0077b6;
+  margin-bottom: 12px;
+}
+
+.section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Volunteer Grid */
+.volunteer-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Volunteer Card */
+.volunteer-box {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volunteer-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.volunteer-box h4 {
+  font-size: 22px;
+  color: #023e8a;
+  margin-bottom: 10px;
+}
+
+.volunteer-box p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+/* List */
+.volunteer-box ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.volunteer-box ul li {
+  padding-left: 20px;
+  margin-bottom: 8px;
+  position: relative;
+  font-size: 14px;
+}
+
+.volunteer-box ul li::before {
+  content: "✔";
+  color: #00b4d8;
+  position: absolute;
+  left: 0;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-secondary {
+  background: #00b4d8;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #0077b6;
+}
+
+.btn-primary {
+  background: #0077b6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #023e8a;
+}
+
+/* Footer */
+.footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Hope Foundation</h1>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="impact.html">Impact</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Intro -->
+<section class="section">
+  <h3>Volunteer With Us</h3>
+  <p>
+    Be part of our mission. Choose a cause and make a meaningful impact.
+  </p>
+</section>
+
+<!-- Volunteer Modules -->
+<section class="section">
+  <div class="volunteer-modules">
+
+    <div class="volunteer-box">
+      <h4>📘 Education Volunteer</h4>
+      <p>Help children build a better future through education.</p>
+      <ul>
+        <li>Teaching basic subjects</li>
+        <li>Mentoring students</li>
+        <li>Supporting digital learning</li>
+      </ul>
+      <a href="contact.html" class="btn-secondary">Volunteer for Education</a>
+    </div>
+
+    <div class="volunteer-box">
+      <h4>🩺 Healthcare Volunteer</h4>
+      <p>Support health initiatives for underserved communities.</p>
+      <ul>
+        <li>Medical camp assistance</li>
+        <li>Health awareness programs</li>
+        <li>Patient support activities</li>
+      </ul>
+      <a href="contact.html" class="btn-secondary">Volunteer for Healthcare</a>
+    </div>
+
+    <div class="volunteer-box">
+      <h4>💧 Clean Water Volunteer</h4>
+      <p>Help provide safe drinking water and hygiene education.</p>
+      <ul>
+        <li>Water conservation campaigns</li>
+        <li>Village surveys</li>
+        <li>Hygiene awareness</li>
+      </ul>
+      <a href="contact.html" class="btn-secondary">Volunteer for Water</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <a href="contact.html" class="btn-primary">Become a Volunteer</a>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Hope Foundation</p>
+</footer>
+
+</body>
+</html>

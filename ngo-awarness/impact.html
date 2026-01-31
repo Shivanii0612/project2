@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Impact | Hope Foundation</title>
+
+<style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4fefe;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 25px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0077b6;
+  margin-bottom: 45px;
+}
+
+/* Impact Grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Impact Card */
+.impact-card {
+  position: relative;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+/* Card Image */
+.impact-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay (always visible) */
+.impact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.15)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  color: white;
+  transition: 0.4s ease;
+}
+
+/* Title always visible */
+.impact-overlay h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+}
+
+/* Description hidden initially */
+.impact-overlay p {
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* Hover Effects */
+.impact-card:hover img {
+  transform: scale(1.1);
+}
+
+.impact-card:hover .impact-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.3)
+  );
+}
+
+.impact-card:hover .impact-overlay p {
+  opacity: 1;
+  max-height: 120px;
+}
+
+/* Footer */
+.footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Hope Foundation</h1>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="impact.html">Impact</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Our Impact</h2>
+
+  <div class="impact-grid">
+
+    <a href="education.html" class="impact-card">
+      <img src="https://cdn.elearningindustry.com/wp-content/uploads/2021/11/shutterstock_213333985.jpg">
+      <div class="impact-overlay">
+        <h3>Education for All</h3>
+        <p>Empowering over 5,000 children through quality education programs.</p>
+      </div>
+    </a>
+
+    <a href="healthcare.html" class="impact-card">
+      <img src="https://thumbs.dreamstime.com/b/access-to-healthcare-concept-icon-access-to-healthcare-concept-icon-gender-gap-criteria-problem-getting-best-medical-care-health-198263385.jpg">
+      <div class="impact-overlay">
+        <h3>Healthcare Access</h3>
+        <p>Free medical camps bringing healthcare to 20,000+ people.</p>
+      </div>
+    </a>
+
+    <a href="water.html" class="impact-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE0XOdTr-nCUusLTSMjcwlbWjck9cNHl743Q&s">
+      <div class="impact-overlay">
+        <h3>Clean Water</h3>
+        <p>Safe drinking water facilities installed in 100+ villages.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Hope Foundation</p>
+</footer>
+
+</body>
+</html>
